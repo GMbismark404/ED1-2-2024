@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/31 08:47:27.000.648,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/08/31 08:47:27.000.270,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/08/31 09:01:20.000.487,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2024/08/31 09:01:45.000.797,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uListaPuntero.h</Transaction>
+    <Transaction>2024/08/31 09:01:45.000.797,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uListaPuntero.cpp</Transaction>
+    <Transaction>2024/08/31 09:18:47.000.985,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\PolinomioListaPPCH1.h</Transaction>
+    <Transaction>2024/08/31 09:18:48.000.032,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.dfm</Transaction>
+    <Transaction>2024/08/31 09:18:48.000.065,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uListaPuntero.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\uListaPuntero.cpp</Transaction>
+    <Transaction>2024/08/31 09:18:48.000.032,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.h</Transaction>
+    <Transaction>2024/08/31 09:18:48.000.032,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.cpp</Transaction>
+    <Transaction>2024/08/31 09:18:48.000.065,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uListaPuntero.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\uListaPuntero.h</Transaction>
+    <Transaction>2024/08/31 09:18:48.000.090,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\PolinomioListaP.cbproj</Transaction>
+    <Transaction>2024/08/31 09:19:04.000.028,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\uFPrincipal.h</Transaction>
+    <Transaction>2024/08/31 09:19:04.000.028,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.dfm=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\uFPrincipal.dfm</Transaction>
+    <Transaction>2024/08/31 09:19:04.000.028,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\uFPrincipal.cpp</Transaction>
+    <Transaction>2024/08/31 09:59:52.000.773,=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.cpp</Transaction>
+    <Transaction>2024/08/31 10:00:22.000.762,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\uPolinomioListaP.h</Transaction>
+    <Transaction>2024/08/31 10:00:22.000.762,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_LISTA_PUNTERO\uPolinomioListaP.cpp</Transaction>
+    <Transaction>2024/09/24 20:22:05.000.640,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_PUNTERO_LISTA\Polinomio_Puntero_ListaPCH1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_PUNTERO_LISTA\PolinomioListaPPCH1.h</Transaction>
+    <Transaction>2024/09/24 20:22:05.000.651,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_PUNTERO_LISTA\Polinomio_Puntero_Lista.cbproj=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_PUNTERO_LISTA\PolinomioListaP.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

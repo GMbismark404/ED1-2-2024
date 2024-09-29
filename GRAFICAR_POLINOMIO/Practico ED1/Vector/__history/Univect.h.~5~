@@ -1,0 +1,54 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnivectH
+#define UnivectH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include <tchar.h>
+#include <string>
+#include <iomanip>
+#include <Graphics.hpp>
+using namespace std;
+
+const int MAX= 100;
+const int NULO = 0;
+/*struct veclist{
+	int ELE;
+	//int dire;
+};*/
+  typedef int direccion;
+class Vector{
+	private:
+
+	   //veclist* getvec() {
+	   //return vli;
+	   //}
+
+	//veclist* vli;
+	int vect[];
+	int longi;
+	direccion PtrElementos;
+	public:
+	Vector();
+	 int getLong() {
+		return longi ;
+	}
+
+	direccion Listfind();
+	direccion Listinid();
+	direccion Sigdir(int p);
+	direccion Antdir(int p);
+	bool Lisvacio();
+	int Lrecu(int p);
+	int longit();
+	void Lins(int p, int ele);
+	void Linspr(int ele);
+	void Linsfi(int ele);
+	void Lsupr(int p);
+	void Lmod(int p, int ele);
+
+
+};
+
+
+#endif

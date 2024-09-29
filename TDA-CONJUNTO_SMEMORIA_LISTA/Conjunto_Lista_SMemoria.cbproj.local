@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/09/15 10:27:02.000.798,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/09/15 10:27:02.000.869,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/09/15 10:27:47.000.510,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2024/09/15 10:28:09.000.473,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_Lista_SMemoriaPCH1.h</Transaction>
+    <Transaction>2024/09/15 10:28:09.000.478,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_Lista_SMemoria.cbproj</Transaction>
+    <Transaction>2024/09/15 10:28:29.000.930,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.cpp</Transaction>
+    <Transaction>2024/09/15 10:28:29.000.930,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.h</Transaction>
+    <Transaction>2024/09/15 10:28:29.000.930,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.dfm</Transaction>
+    <Transaction>2024/09/15 10:28:38.000.370,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uD.cpp</Transaction>
+    <Transaction>2024/09/15 10:28:38.000.370,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uD.h</Transaction>
+    <Transaction>2024/09/15 10:29:09.000.032,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uD.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uConjunto_Lista_SMemoria.cpp</Transaction>
+    <Transaction>2024/09/15 10:29:09.000.032,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uD.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uConjunto_Lista_SMemoria.h</Transaction>
+    <Transaction>2024/09/15 10:30:41.000.099,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uFPrincipal.cpp</Transaction>
+    <Transaction>2024/09/15 10:30:41.000.116,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uConjunto_Lista_SMemoria.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uConjunto_Lista_SMemoria.cpp</Transaction>
+    <Transaction>2024/09/15 10:30:41.000.077,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_Lista_SMemoriaPCH1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\Conjunto_Lista_SMemoriaPCH2.h</Transaction>
+    <Transaction>2024/09/15 10:30:41.000.116,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uConjunto_Lista_SMemoria.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uConjunto_Lista_SMemoria.h</Transaction>
+    <Transaction>2024/09/15 10:30:41.000.099,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.dfm=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uFPrincipal.dfm</Transaction>
+    <Transaction>2024/09/15 10:30:41.000.099,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uFPrincipal.h</Transaction>
+    <Transaction>2024/09/15 10:30:41.000.136,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_Lista_SMemoria.cbproj=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\Conjunto_Lista_SMemoria.cbproj</Transaction>
+    <Transaction>2024/09/15 10:31:09.000.675,=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\Unit1.cpp</Transaction>
+    <Transaction>2024/09/15 10:31:19.000.699,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uCSMemoria.cpp</Transaction>
+    <Transaction>2024/09/15 10:31:19.000.699,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\Unit1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uCSMemoria.h</Transaction>
+    <Transaction>2024/09/15 10:31:32.000.917,=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\Unit1.cpp</Transaction>
+    <Transaction>2024/09/15 10:31:48.000.985,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\Unit1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uLista_SMemoria.h</Transaction>
+    <Transaction>2024/09/15 10:31:48.000.985,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_LISTA_SMEMORIA\uLista_SMemoria.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

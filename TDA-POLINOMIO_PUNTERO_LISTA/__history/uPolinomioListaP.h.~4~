@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+#ifndef uPolinomioListaPH
+#define uPolinomioListaPH
+#include <Vcl.Dialogs.hpp>
+#include "uListaPuntero.h"
+//---------------------------------------------------------------------------
+
+class PolinomioLP {
+private: //Atributos
+	ListaP *pol;
+private: //Metodos privados
+	Direccion BuscarExponente(int exp);
+public: //Metodos publicos
+
+};
+
+#endif

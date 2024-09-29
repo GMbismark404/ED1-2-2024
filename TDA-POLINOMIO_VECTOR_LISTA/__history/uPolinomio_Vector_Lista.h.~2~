@@ -1,0 +1,7 @@
+//---------------------------------------------------------------------------
+#ifndef uPolinomio_Vector_ListaH
+#define uPolinomio_Vector_ListaH
+#include "uVector_Lista.h"
+//---------------------------------------------------------------------------
+
+#endif

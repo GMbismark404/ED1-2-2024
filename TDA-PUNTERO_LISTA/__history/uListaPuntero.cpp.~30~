@@ -1,0 +1,192 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#include "uListaPuntero.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+ListaP::ListaP() // Constructor: Inicializa longitud con 0, PtrElementos con NULL
+{
+	this->PtrElementos = nullptr;
+	this->longitud = 0;
+}
+
+Direccion ListaP::primero() {
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía!"); return nullptr;
+	} else {
+		return PtrElementos;
+	}
+}
+
+Direccion ListaP::fin(){
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía!"); return nullptr;
+	} else {
+		Direccion ptrfin = nullptr;
+		for (Direccion x = PtrElementos; x != nullptr; x = x->sig) {
+			ptrfin = x;
+		}
+	return ptrfin;
+	}
+}
+
+void ListaP::inserta(Direccion p, int elemento) {
+	Direccion x = new Nodo;
+	if (x == nullptr) {
+		ShowMessage("La Memoria está llena!"); return; // Lanzar una excepción en caso de falla en la asignación de memoria
+	} else {
+	// Si la asignación de memoria fue exitosa, continuamos con la inserción del nodo
+		x->elementos = elemento;
+		x->sig = nullptr;
+		if (EsVacio()) {
+			PtrElementos = x;
+			longitud = 1;
+		} else {
+		longitud++;
+			if (p == primero()) {
+				x->sig = p;
+				PtrElementos = x;
+			} else {
+				Direccion ant = anterior(p);
+				ant->sig = x;
+				x->sig = p;
+			}
+		}
+	}
+}
+
+void ListaP::inserta_primero(int elemento){
+	Direccion x = new Nodo;
+	if (x != nullptr) {
+		x->elementos = elemento;
+		x->sig = PtrElementos;
+		longitud++;
+		PtrElementos = x;
+	}else{
+		ShowMessage("La lista está llena!"); return; // Lanzar una excepción en caso de falla en la asignación de memoria
+	}
+}
+
+void ListaP::inserta_ultimo(int elemento){
+	Direccion x = new Nodo;
+	if (x != nullptr) {
+		x->elementos = elemento;
+		x->sig = nullptr;
+		if (longitud != 0) {
+			fin()->sig = x;
+		} else {
+			PtrElementos = x;
+		}
+		longitud++;
+	} else {
+		ShowMessage("La lista está llena!"); return; // Lanzar una excepción en caso de falla en la asignación de memoria
+    }
+}
+
+Direccion ListaP::siguiente(Direccion p){
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía!"); return nullptr;;
+	} else {
+		if (p == fin()) {
+			ShowMessage("El final de la lista no existe su siguiente!"); return nullptr;
+		} else {
+			if (p != nullptr)
+				return p->sig;
+			else
+				return nullptr;
+		}
+	}
+}
+
+Direccion ListaP::anterior(Direccion p) {
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía!"); return nullptr;
+    } else if (p == primero()) {
+		ShowMessage("No tiene un anterio el primero por lo tanto NULL!"); return nullptr;
+    } else {
+        Direccion anterior = nullptr;
+		Direccion actual = PtrElementos;
+
+        while (actual != nullptr && actual != p) {
+			anterior = actual;
+            actual = actual->sig;
+        }
+
+		if (actual == nullptr) {
+			ShowMessage("La dirección no se encuentra en la lista!"); return nullptr;
+		} else {
+            return anterior;
+        }
+    }
+}
+
+bool ListaP::EsVacio() {
+	return (longitud == 0) || (PtrElementos == nullptr);
+}
+
+int ListaP::LongitudLista() {
+	return longitud;
+}
+
+int ListaP::recupera(Direccion p) {
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía!"); return -1;
+	}else{
+		return p->elementos;
+	}
+}
+
+void ListaP::suprime(Direccion p) {
+	if (longitud == 0 || p == nullptr) {
+		ShowMessage("La lista está vacía o la dirección es nula!"); return;
+    } else {
+		if (p == PtrElementos) {
+			PtrElementos = p->sig;
+        } else {
+            Direccion actual = PtrElementos;
+            while (actual != nullptr && actual->sig != p) {
+				actual = actual->sig;
+			}
+			if (actual == nullptr) {
+				ShowMessage("La dirección no se encuentra en la lista!"); return;
+			}
+			actual->sig = p->sig;
+        }
+		delete p;
+        longitud--;
+    }
+}
+
+void ListaP::anular() {
+	if (!EsVacio()) {
+		for (Direccion x = primero(); x != nullptr; x = primero()) {
+			suprime(x);
+		}
+		ShowMessage("Memoria lipia!");
+	} else {
+		ShowMessage("La lista está vacía!");
+	}
+}
+
+Direccion ListaP::buscar(int elemento) {
+	for (Direccion p = primero(); p != nullptr; p = siguiente(p)) {
+		if (recupera(p) == elemento) {
+			return p; // Retorna la dirección si se encuentra el elemento
+        }
+	}
+    return nullptr; // Retorna nullptr si el elemento no se encuentra
+}
+
+void ListaP::MostrarLista(TCanvas *canvas) {
+AnsiString cad = "<| ";
+	for (Direccion p = primero(); p != nullptr; p = siguiente(p)) {
+		if (recupera(p) != -1)
+			cad =  cad + AnsiString(IntToStr(recupera(p))) + ", ";
+		else
+            cad = "La lista está vacía!";
+	}
+
+//	label->Caption = cad.Delete(cad.Length()- 1, 2) + " |>";
+	canvas->Font->Size = 38;
+    canvas->TextOutW(400, 200, cad.Delete(cad.Length() - 1, 2) + L" |>");
+}
+

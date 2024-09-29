@@ -1,0 +1,39 @@
+//---------------------------------------------------------------------------
+
+#ifndef uFPrincipalH
+#define uFPrincipalH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include "uCSMemoria.h"
+#include "uLista_SMemoria.h"
+#include "uConjunto_Lista_SMemoria.h"
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TButton *CrearMemoria;
+	TButton *PedirEspacioSM;
+	TButton *CrearConjA;
+	TButton *CrearConjB;
+	TButton *CrearConjC;
+	TButton *InsertaElemento;
+	TButton *MostrarConjunto;
+	TButton *UnirEnC;
+	TButton *IntersectarEnC;
+	TButton *MostrarMemoriaConj;
+	TButton *Salir;
+	void __fastcall CrearMemoriaClick(TObject *Sender);
+private:	// User declarations
+	CSMemoria *mem;
+	ListaS *lista;
+    ConjuntoLS *conj;
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

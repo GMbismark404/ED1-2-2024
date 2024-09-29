@@ -1,0 +1,41 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "uFPrincipal.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TSalir *Salir;
+//---------------------------------------------------------------------------
+__fastcall TSalir::TSalir(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TSalir::CrearPolinomioClick(TObject *Sender)
+{
+	poli = new PolinomioP;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TSalir::PonerTerminoClick(TObject *Sender)
+{
+	poli->poner_termino(StrToInt(Edit1->Text), StrToInt(Edit2->Text));
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TSalir::MostrarPolinomioClick(TObject *Sender)
+{
+    poli->M
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TSalir::Button5Click(TObject *Sender)
+{
+	Form1->Close();
+}
+//---------------------------------------------------------------------------
+

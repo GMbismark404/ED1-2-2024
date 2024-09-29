@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------
+#ifndef uPolinomioListaPH
+#define uPolinomioListaPH
+#include <Vcl.Dialogs.hpp>
+#include "uListaPuntero.h"
+//---------------------------------------------------------------------------
+
+class PolinomioLP {
+private: //Atributos
+	ListaP *pol;
+private: //Metodos privados
+	Direccion BuscarExponente(int exp);
+	Direccion BuscarTerminoN(int i);
+public: //Metodos publicos
+	PolinomioLP();
+	bool EsCero();
+	int Grado();
+	int coeficiente(int exp);
+	void AsignarCoeficiente(int coef, int exp);
+	void poner_termino(int coef, int exp);
+	int numero_terminos();
+	int exponente(int nroter);
+	void sumar(PolinomioLP *p1, PolinomioLP *p2);
+	void restar(PolinomioLP *p1, PolinomioLP *p2);
+	void multiplicar(PolinomioLP *p1, PolinomioLP *p2);
+};
+
+#endif

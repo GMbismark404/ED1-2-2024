@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/09/24 18:42:40.000.512,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/09/24 18:42:40.000.088,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/09/24 18:43:00.000.674,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_PunteroPCH1.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/09/24 18:43:00.000.679,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_Puntero.cbproj=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2024/09/24 18:43:46.000.356,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/09/24 18:43:46.000.356,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.dfm=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/09/24 18:43:46.000.356,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2024/09/24 18:44:03.000.864,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\uFPrincipal.dfm=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.dfm</Transaction>
+    <Transaction>2024/09/24 18:44:03.000.864,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\uFPrincipal.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.h</Transaction>
+    <Transaction>2024/09/24 18:44:03.000.825,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\Conjunto_PunteroPCH2.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_PunteroPCH1.h</Transaction>
+    <Transaction>2024/09/24 18:44:03.000.864,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\uFPrincipal.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.cpp</Transaction>
+    <Transaction>2024/09/24 18:44:03.000.884,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\Conjunto_Puntero.cbproj=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_Puntero.cbproj</Transaction>
+    <Transaction>2024/09/24 18:44:22.000.999,=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\Unit1.cpp</Transaction>
+    <Transaction>2024/09/24 18:44:38.000.925,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\uConjunto_Puntero.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\Unit1.cpp</Transaction>
+    <Transaction>2024/09/24 18:44:38.000.925,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\uConjunto_Puntero.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_PUNTERO\Unit1.h</Transaction>
+  </Transactions>
+</BorlandProject>

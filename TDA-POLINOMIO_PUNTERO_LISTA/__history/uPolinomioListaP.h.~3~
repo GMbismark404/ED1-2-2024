@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+#ifndef uPolinomioListaPH
+#define uPolinomioListaPH
+#include <Vcl.Dialogs.hpp>
+#include "uListaPuntero.h"
+//---------------------------------------------------------------------------
+
+class PolinomioLP {
+private:
+	ListaP *pol;
+public:
+
+};
+
+#endif

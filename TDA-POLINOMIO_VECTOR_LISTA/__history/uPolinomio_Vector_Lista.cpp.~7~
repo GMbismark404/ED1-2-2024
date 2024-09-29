@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#include "uPolinomio_Vector_Lista.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+PolinomioVL::PolinomioVL() {
+
+}
+
+direccion PolinomioVL::BuscarExponente(int exp) {
+	direccion dir = pol.siguiente(pol.primero());
+	if (dir != NULO) {
+		direccion dirExp = NULO;
+
+	}
+}

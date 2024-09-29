@@ -1,0 +1,249 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Menpoli.h"
+#include "UnIMEM.h"
+#include <vcl.h>
+#include <iostream>
+#include <math.h>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+	direccion polimem::BExp(int Exp){
+		direccion dir = this->ptr;
+	if (dir != NULO) {
+		direccion dirEx = NULO;
+		while (dir != NULO && dirEx == NULO) {
+			if (Cm->obtenerDato(dir, "->exp") == Exp) {
+				dirEx = dir;
+			}
+			dir = Cm->obtenerDato(dir, "->sig");
+		}
+		return dirEx;
+	} else {
+		//ShowMessage("No existe ese termino!");
+		return NULO;
+	}
+	}
+
+	direccion polimem::BTer(int I){
+		direccion dir = this->ptr;
+	if (dir != NULO) {
+		direccion dirTer = NULO;
+		Nt = 0;
+		while (dir != NULO && dirTer == NULO) {
+			Nt++;
+			if (Nt == I) {
+				dirTer = dir;
+			}
+			dir = Cm->obtenerDato(dir, "->sig");
+		}
+		return dirTer;
+	} else {
+		//ShowMessage("No existe terminos!");
+		return NULO;
+	}
+	}
+
+	/*polimem::polimem(){
+		Nt=0;
+		ptr=NULO;
+		Cm= new CSmemoria();
+	} */
+
+	polimem::polimem(CSmemoria *m){
+		Nt=0;
+		ptr=NULO;
+		Cm=m;
+	}
+
+	bool polimem::EsCero(){
+		return (Nt==0);
+	}
+
+	int polimem::Grado(){
+		direccion dir = this->ptr;
+	if (dir != NULO) {
+		int MaxG = Cm->obtenerDato(dir, "->exp");
+		while (dir != NULO) {
+			if (Cm->obtenerDato(dir, "->exp") > MaxG) {
+				MaxG = Cm->obtenerDato(dir, "->exp");
+			}
+			dir = Cm->obtenerDato(dir, "->sig");
+		}
+		return MaxG;
+	} else {
+		//ShowMessage("No existe ese termino!");
+		return NULO;
+	}
+	}
+
+	int polimem::coef(int Exp){
+	direccion dir = BExp(Exp);
+	if (dir != NULO) {
+		return Cm->obtenerDato(dir, "->coef");
+	} else {
+		//ShowMessage("No existe ese termino!");
+	}
+	}
+
+	void polimem::Ascoef(int coef,int exp){
+	direccion dir = BTer(coef);
+	if (dir != NULO) {
+		Cm->poner_dato(dir, "->coef", coef);
+		if (coef == 0) {
+			Cm->Delete_espacio(dir);
+		}
+	} else {
+		//ShowMessage("No existe ese termino!");
+	}
+	}
+
+	int polimem::Poterm(int coef,int exp){
+	direccion existe = BExp(exp);
+	if (existe == NULO) {
+		direccion nuevoNodo = Cm->new_espacio("coef,exp,sig");
+		if (nuevoNodo != NULO) {
+			Cm->poner_dato(nuevoNodo, "->coef", coef);
+			Cm->poner_dato(nuevoNodo, "->exp", exp);
+			Cm->poner_dato(nuevoNodo, "->sig", ptr);
+			ptr = nuevoNodo;
+			Nt=Nt+1;
+			//ShowMessage(IntToStr(Nt));
+		} else {
+			//ShowMessage("Error espacio de memoria!");
+		}
+	} else {
+		int nuevoCoef = Cm->obtenerDato(existe, "->coef") + coef;
+		Cm->poner_dato(existe, "->coef", nuevoCoef);
+		if (nuevoCoef == 0) {
+			Cm->Delete_espacio(existe);
+		}
+	}
+	}
+
+	int polimem::Nterm(){
+		return Nt;
+	}
+
+	int polimem::exp(int nroter){
+		direccion dir = BTer(nroter);
+	if (dir != NULO) {
+		return Cm->obtenerDato(dir, "->exp");
+	} else {
+		//ShowMessage("No existe ese termino!");
+        return NULO;
+	}
+	}
+
+	void polimem::derivar(polimem *p,polimem *p1){
+	ShowMessage(IntToStr(p->Nterm()));
+	int Temp=p->Nterm();
+	for (int i = 1; i <= Temp; i++) {
+		int ex = p->exp(i);
+		int co = p->coef(ex);
+		p1->Poterm(co*ex, ex-1);
+	}
+	}
+	double polimem::Evaluar(double valx)
+	{
+		double val=0;
+		int ex,co;
+		for (int i = 1; i <= Nterm(); i++) {
+			ex=exp(i);
+			co=coef(ex);
+			val=val+(co*pow(valx,ex));
+		}
+		return val;
+	}
+	void polimem::Grafico(TCanvas *Canvas, double A, double B)
+	{
+		int XF=1750;
+		int YF=1000;//HEIGH
+		Canvas->MoveTo(1250,500);
+		Canvas->LineTo(1250,1000);
+		Canvas->LineTo(1250,0);
+		Canvas->MoveTo(1250,500);
+		Canvas->LineTo(1750,500);
+		Canvas->LineTo(750,500);
+		double EscalaX = ((XF+750) / ((B-A)/2.0));
+		double EscalaY = YF / 50.0;
+		bool Punto1 = true;
+		/*for (double x = A; x <= B; x += 0.01)  // Incremento pequeño para suavizar la curva
+		{
+			double yf = Evaluar(x);;   // Evaluar la función polinómica
+			int Xi = (int)((x - A) * EscalaX);      // Convertir x al sistema de coordenadas de la pantalla
+			int Yi = YF / 2 - (int)(yf * EscalaY); // Ajustar escala vertical
+		if (Punto1)
+		{
+			Canvas->MoveTo(Xi, Yi);
+			Punto1 = false;
+		}
+		else
+		{
+			Canvas->LineTo(Xi, Yi);
+		}
+		}*/
+		//int XFA=XF-(abs(A)*20);
+		//int YFA;
+		for (int x = -(XF-(750-(A*20))) / 2; x < XF / 2; x++) {
+		double xf = x / 20.0;  // Escala de zoom horizontal
+		double yf = Evaluar(xf);  // Evaluar la función polinómica
+		int screenX = (XFA+(750-(abs(A)*20))) / 2 + x;          // Convertir a coordenadas de pantalla
+		int screenY = YF / 2 - (int)(yf * 20); // Ajustar escala vertical
+
+		if (x == -(XFA-(750-(abs(A)*20))))
+			Canvas->MoveTo(screenX, screenY);
+		else
+			Canvas->LineTo(screenX, screenY);
+	}
+
+
+
+			Canvas->Font->Color = clBlack;  // Color de la fuente
+		for (int x = -(XF-750) / 2; x <= YF / 2; x += 20) {
+			int screenX = (XF+750) / 2 + x;
+			int screenY = YF / 2;
+
+		// Dibujar marcas de escala: screenY = 390
+			Canvas->MoveTo(screenX, screenY - 5); // P0(0,385)
+			Canvas->LineTo(screenX, screenY + 5); // P1(0,395)
+
+		// Mostrar los números de la escala
+			if (x != 0) {  // No dibujar el número 0 en el eje X
+				String label = IntToStr(x / 20);  // "-50"
+				Canvas->TextOut(screenX - 5, screenY + 10, label); //P(-5,510)
+			}
+		}
+
+	// Dibujar escalas numéricas en el eje Y
+		for (int y = -YF / 2; y <= YF / 2; y += 20) {
+			int screenX = (XF+750) / 2;
+			int screenY = YF / 2 - y;
+
+		// Dibujar marcas de escala
+		Canvas->MoveTo(screenX - 5, screenY); // Línea a la izquierda
+		Canvas->LineTo(screenX + 5, screenY); // Línea a la derecha
+
+		// Mostrar los números de la escala
+		if (y != 0) {  // No dibujar el número 0 en el eje Y
+			String label = IntToStr(y / 20);  // Convertir la escala a su valor numérico
+			Canvas->TextOut(screenX + 10, screenY - 5, label);
+		}
+	}
+        Canvas->Pen->Color = clBlack;
+		int xA = (int)((A - A) * EscalaX);
+		int xB = (int)((B - A) * EscalaX);
+
+		Canvas->MoveTo(xA, YF / 2 - 5);
+		Canvas->LineTo(xA, YF / 2 + 5);
+		Canvas->TextOut(xA - 10, YF / 2 + 10, "A");
+
+		Canvas->MoveTo(xB, YF / 2 - 5);
+		Canvas->LineTo(xB, YF / 2 + 5);
+		Canvas->TextOut(xB - 10, YF / 2 + 10, "B");
+		Canvas->Pen->Color = clBlack;
+
+	}
+

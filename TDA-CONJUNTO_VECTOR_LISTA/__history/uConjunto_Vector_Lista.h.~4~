@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+#ifndef uConjunto_Vector_ListaH
+#define uConjunto_Vector_ListaH
+#include "uVector_Lista.h"
+#include "uVector_Lista.h"
+//---------------------------------------------------------------------------
+
+class ConjuntoV {
+	private:
+
+};
+
+#endif

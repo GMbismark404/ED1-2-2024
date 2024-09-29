@@ -1,0 +1,162 @@
+Direccion ListaP::primero() {
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía");
+		return nullptr;
+	} else {
+		return PtrElementos;
+	}
+
+}
+
+Direccion ListaP::fin() {
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía");
+		return nullptr;
+	} else {
+		Direccion ptrfin = nullptr;
+		for (Direccion x = PtrElementos; x != nullptr; x = x->sig) {
+			ptrfin = x;
+		}
+	return ptrfin;
+	}
+}
+
+void ListaP::inserta(Direccion p, TipoElemento elemento) {
+	Direccion x = new Nodo();
+	if (x == nullptr) {
+		ShowMessage("Memoria de la RAM llena!");
+		return; // Lanzar una excepción en caso de falla en la asignación de memoria
+	} else {
+// 	Si la asignación de memoria fue exitosa, continuamos con la inserción del nodo
+	x->elementos = elemento;
+	x->sig = nullptr;
+		if (EsVacio()) {
+			PtrElementos = x;
+			longitud = 1;
+		} else {
+		longitud++;
+			if (p == primero()) {
+				x->sig = p;
+				PtrElementos = x;
+			} else {
+				Direccion ant = anterior(p);
+				ant->sig = x;
+				x->sig = p;
+			}
+		}
+	}
+}
+
+void ListaP::inserta_primero(TipoElemento elemento) {
+	Direccion x = new Nodo;
+	if (x != nullptr) {
+		x->elementos = elemento;
+		x->sig = PtrElementos;
+		longitud++;
+		PtrElementos = x;
+	}else{
+		ShowMessage("Memoria de la RAM llena!"); // Lanzar una excepción en caso de falla en la asignación de memoria
+    }
+}
+
+void ListaP::inserta_ultimo(TipoElemento elemento) {
+	Direccion x = new Nodo;
+	if (x != nullptr) {
+		x->elementos = elemento;
+		x->sig = nullptr;
+		if (longitud != 0) {
+			fin()->sig = x;
+		} else {
+			PtrElementos = x;
+		}
+		longitud++;
+	} else {
+		ShowMessage("Memoria llena"); // Lanzar una excepción en caso de falla en la asignación de memoria
+    }
+}
+
+Direccion ListaP::siguiente(Direccion p) {
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía!");
+	} else {
+		if (p == fin()) {
+			ShowMessage("La dirección es incorrecta!");
+			return nullptr;
+		} else {
+			return p->sig;
+		}
+	}
+}
+
+Direccion ListaP::anterior(Direccion p) {
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía!");
+		return nullptr;
+	} else if (p == primero()) {
+		ShowMessage("La dirección es incorrecta!");
+		return nullptr;
+	} else {
+        Direccion anterior = nullptr;
+        Direccion actual = PtrElementos;
+
+        while (actual != nullptr && actual != p) {
+            anterior = actual;
+            actual = actual->sig;
+        }
+
+		if (actual == nullptr) {
+			ShowMessage("La dirección no se encuentra en la lista!");
+			return nullptr;
+		} else {
+			return anterior;
+		}
+    }
+}
+
+
+TipoElemento ListaP::recupera(Direccion p) {
+	if (EsVacio()) {
+		ShowMessage("La lista está vacía!");
+		return 0;
+	}else{
+		return p->elementos;
+	}
+}
+
+void ListaP::suprime(Direccion p) {
+	if (longitud == 0 || p == nullptr) {
+		ShowMessage("La lista está vacía o la dirección es nula!");
+        return;
+	} else {
+        if (p == PtrElementos) {
+			PtrElementos = p->sig;
+        } else {
+            Direccion actual = PtrElementos;
+            while (actual != nullptr && actual->sig != p) {
+                actual = actual->sig;
+            }
+			if (actual == nullptr) {
+				ShowMessage("La dirección no se encuentra en la lista!");
+				return;
+            }
+			actual->sig = p->sig;
+        }
+        delete p;
+		longitud--;
+    }
+}
+
+Direccion ListaP::buscar(TipoElemento elemento) {
+	for (Direccion p = primero(); p != nullptr; p = siguiente(p)) {
+		if (recupera(p) == elemento) {
+			return p; // Retorna la dirección si se encuentra el elemento
+        }
+	}
+    return nullptr; // Retorna nullptr si el elemento no se encuentra
+}
+
+void ListaP::mostrarLista() {
+	for (Direccion p = primero(); p != nullptr; p = siguiente(p)) {
+		cout << recupera(p) << " ";
+	}
+}

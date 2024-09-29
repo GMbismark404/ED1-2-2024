@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------
+#ifndef uConjunto_Puntero_ListaH
+#define uConjunto_Puntero_ListaH
+#include <cstdlib>  // Para rand() y srand()
+#include "uPuntero_Lista.h"
+//---------------------------------------------------------------------------
+typedef int posicion;
+
+class ConjuntoPL {
+	private:
+		ListaP *elem;
+	private:
+		int obtenerNumeroAleatorio(int min, int max);
+	public:
+		ConjuntoPL();
+		bool EsVacio();
+		bool pertenece(int elemento);
+		void inserta(int elemento);
+		int cardinal();
+		int ordinal();
+		void suprime();
+		int muestrea();
+		void Union(ConjuntoPL A, Conjunto PL B);
+		void Interseccion(ConjuntoPL A, Conjunto PL B);
+		void Equivalente(ConjuntoPL A, Conjunto PL B);
+		void MostrarConjunto();
+};
+
+#endif

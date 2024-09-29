@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------
+#ifndef uConjunto_VectorH
+#define uConjunto_VectorH
+#include <Vcl.Dialogs.hpp>
+ #include <Vcl.Graphics.hpp>
+ #include <cstdlib>  // Para rand() y srand()
+//---------------------------------------------------------------------------
+const int MAX = 20;
+
+class ConjuntoV {
+	private:
+		int vector[MAX];
+		int cant;
+	public:
+		ConjuntoV();
+		bool EsVacio();
+		bool pertenece(int elemento);
+		void inserta(int elemento);
+		int cardinal();
+		int ordinal(int elemento);
+		void suprime(int elemento);
+		int muestrea();
+		void Union(ConjuntoS A, ConjuntoS B);
+		void Interseccion(ConjuntoS A, ConjuntoS B);
+		bool Equivalente(ConjuntoS A, ConjuntoS B);
+		void MostrarConjunto(TCanvas *canvas, int x, int y);
+};
+
+#endif

@@ -1,0 +1,107 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Univect.h"
+#include <algorithm>
+
+#include <iostream>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+Lisv::Lisv(){
+longi= 0;
+}
+
+direccion Lisv::Listfind(){
+   if (!longi==0) {
+	  return longi;
+   }else {
+   std::cout << "Lista actualmente vacia" << std::endl;
+   }
+}
+direccion Lisv::Listinid(){
+  if (!longi==0) {
+	return 1;
+  }else{
+   std::cout << "Lista actualmente vacia" << std::endl;
+  }
+}
+direccion Lisv::Sigdir(int p){
+	if (longi==0) {
+		std::cout << "Lista actualmente vacia" << std::endl;
+	}else if(p==longi){
+		std::cout << "No hay una direccion siguiente" << std::endl;
+	}else return p++;
+}
+direccion Lisv::Antdir(int p){
+	if (longi==0) {
+		std::cout << "Lista actualmente vacia" << std::endl;
+	}else if(p==1){
+		std::cout << "No hay una direccion anterior" << std::endl;
+	}else return p--;
+}
+bool Lisv::Lisvacio(){
+	return (longi==0);
+}
+int Lisv::Lrecu(int p){
+	if (Lisvacio()) {
+		std::cout << "Lista actualmente vacia" << std::endl;
+	}else if(!(p>=1 && p<= longi)){
+		std::cout << "Direccion erronea" << std::endl;
+	}else return vect[p] ;
+}
+int Lisv::longit(){
+	return longi;
+}
+
+void Lisv::Lins(int p, int ele){
+	if (longi==MAX1) {
+		std::cout << "LISTA LLENA" << std::endl;
+	}else if(!(p>=1 && p<=longi)){
+		std::cout << "Direccion erronea" << std::endl;
+	}
+	for (int i = longi+1; i >= p+1; i--) {
+	  vect[i]=vect[i-1];
+	}
+	vect[p]=ele;
+	longi++;
+}
+void Lisv::Linspr(int ele){
+	if (longi==MAX1) {
+		std::cout << "LISTA LLENA" << std::endl;
+	}
+	for (int i = longi+1; i > 1; i--) {
+		vect[i]=vect[i-1];
+	}
+	vect[1]=ele;
+	longi++;
+}
+void Lisv::Linsfi(int ele){
+	if (longi==MAX1) {
+	   std::cout << "LISTA LLENA" << std::endl;
+	}else {
+	   longi++;
+	   vect[longi]=ele;
+	}
+}
+void Lisv::Lsupr(int p){
+	if (longi==0) {
+	   std::cout << "Lista actualmente vacia" << std::endl;
+	} else if (!(p>=1 && p<=longi-1)) {
+	   std::cout << "Direccion erronea" << std::endl;
+	  }
+	for (int i = p; i <= longi-1; i++) {
+	   vect[i]=vect[i+1];
+	}
+	longi--;
+}
+void Lisv::Lmod(int p, int ele){
+	if (longi==0) {
+	   std::cout << "Lista actualmente vacia" << std::endl;
+	}else if (!(p>=1 && p<=longi)) {
+			std::cout << "" << std::endl;
+		  }
+	vect[p]=ele;
+}
+

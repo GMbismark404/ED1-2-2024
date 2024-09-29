@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/09/25 17:13:05.000.872,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/09/25 17:13:05.000.453,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/09/25 17:13:21.000.642,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_VectorPCH1.h</Transaction>
+    <Transaction>2024/09/25 17:13:21.000.648,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_Vector.cbproj</Transaction>
+    <Transaction>2024/09/25 17:13:29.000.453,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.h</Transaction>
+    <Transaction>2024/09/25 17:13:29.000.453,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.cpp</Transaction>
+    <Transaction>2024/09/25 17:13:29.000.453,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.dfm</Transaction>
+    <Transaction>2024/09/25 17:13:34.000.918,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/09/25 17:13:54.000.356,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uConjunto_Vector.h</Transaction>
+    <Transaction>2024/09/25 17:13:54.000.356,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uConjunto_Vector.cpp</Transaction>
+    <Transaction>2024/09/25 17:14:42.000.689,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uConjunto_Vector.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_VECTOR\uConjunto_Vector.h</Transaction>
+    <Transaction>2024/09/25 17:14:42.000.645,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_VectorPCH1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_VECTOR\Conjunto_VectorPCH2.h</Transaction>
+    <Transaction>2024/09/25 17:14:42.000.668,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_VECTOR\uFPrincipal.h</Transaction>
+    <Transaction>2024/09/25 17:14:42.000.714,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Conjunto_Vector.cbproj=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_VECTOR\Conjunto_Vector.cbproj</Transaction>
+    <Transaction>2024/09/25 17:14:42.000.668,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_VECTOR\uFPrincipal.cpp</Transaction>
+    <Transaction>2024/09/25 17:14:42.000.668,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.dfm=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_VECTOR\uFPrincipal.dfm</Transaction>
+    <Transaction>2024/09/25 17:14:42.000.689,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uConjunto_Vector.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-CONJUNTO_VECTOR\uConjunto_Vector.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

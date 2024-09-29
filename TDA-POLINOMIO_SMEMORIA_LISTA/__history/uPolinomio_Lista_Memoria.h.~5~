@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------
+#ifndef uPolinomio_Lista_MemoriaH
+#define uPolinomio_Lista_MemoriaH
+#include <Vcl.Graphics.hpp>
+#include <Vcl.Dialogs.hpp>
+#include "uListaMemoria.h"
+//---------------------------------------------------------------------------
+
+class PolinomioLS {
+private:
+	ListaS pol;
+private:
+	direccion BuscarExponente(int exp);
+	direccion BuscarTerminoN(int i);
+public:
+	PolinomioLS();
+	bool EsCero();
+	int Grado();
+	int coeficiente(int exp);
+	int exponente(int nroter);
+	void AsignarCoeficiente(int coef, int exp);
+	void poner_termino(int coef, int exp);
+	int numero_terminos();
+};
+
+
+#endif

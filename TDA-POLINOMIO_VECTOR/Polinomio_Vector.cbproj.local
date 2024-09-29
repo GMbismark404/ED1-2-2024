@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/31 12:42:07.000.328,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/08/31 12:42:07.000.273,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/08/31 12:42:23.000.407,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/08/31 12:42:23.000.407,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2024/08/31 12:42:23.000.407,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.dfm=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/08/31 12:42:46.000.346,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Polinomio_Vector.cbproj=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2024/08/31 12:42:46.000.341,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Polinomio_VectorPCH1.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/08/31 12:43:10.000.629,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\Polinomio_VectorPCH2.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Polinomio_VectorPCH1.h</Transaction>
+    <Transaction>2024/08/31 12:43:10.000.716,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\Polinomio_Vector.cbproj=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Polinomio_Vector.cbproj</Transaction>
+    <Transaction>2024/08/31 12:43:10.000.674,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\uFPrincipal.cpp=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.cpp</Transaction>
+    <Transaction>2024/08/31 12:43:10.000.674,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\uFPrincipal.h=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.h</Transaction>
+    <Transaction>2024/08/31 12:43:10.000.674,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\uFPrincipal.dfm=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\uFPrincipal.dfm</Transaction>
+    <Transaction>2024/08/31 12:43:20.000.465,=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\Unit1.cpp</Transaction>
+    <Transaction>2024/08/31 13:01:42.000.142,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\uPolinomio_Vector.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\Unit1.cpp</Transaction>
+    <Transaction>2024/08/31 13:01:42.000.142,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\uPolinomio_Vector.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-POLINOMIO_VECTOR\Unit1.h</Transaction>
+  </Transactions>
+</BorlandProject>

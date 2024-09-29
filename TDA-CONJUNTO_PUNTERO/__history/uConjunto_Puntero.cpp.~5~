@@ -1,0 +1,98 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#include "uConjunto_Puntero.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+ConjuntoP::ConjuntoP() {
+	this->cant = 0;
+	this->ptrConj = nullptr;
+}
+
+bool ConjuntoP::EsVacio() {
+	return (cant == 0); //ptrConj == nullptr;
+}
+
+bool ConjuntoP::pertenece(int elemento) {
+	bool resp = false;
+	Direccion pc = ptrConj;
+	while (pc != nullptr) {
+		if (pc->dato == elemento) {
+			resp = true;
+			pc = nullptr;
+		} else
+			pc = pc->sig;
+	}
+	return resp;
+}
+
+int ConjuntoP::cardinal() {
+	return cant;
+}
+
+void ConjuntoP::inserta(int elemento) {
+	if (!pertenece(elemento)) {
+		Direccion dir = new Nodo;
+		if (dir != nullptr) {
+			dir->dato = elemento;
+			dir->sig = ptrConj;
+			ptrConj = dir;
+			cant++;
+		} else {
+			ShowMessage("Error!. No existe espacio de memoria!");
+        }
+	} else {
+		ShowMessage("Error!. Este elemento ya existe!");
+	}
+}
+
+int ConjuntoP::ordinal(int elemento) {
+	int resp = 0;
+	Direccion pc = ptrConj;
+	while (pc != nullptr) {
+		resp = resp + 1;
+		if (pc->dato == elemento)
+			pc = nullptr;
+		else
+			pc = pc->sig;
+    }
+	return resp;
+}
+
+void ConjuntoP::suprime(int elemento) {
+	Direccion dir = nullptr;
+	Direccion pc = ptrConj;
+	while (pc != nullptr) {
+		if (pc->dato == elemento) {
+			dir = pc;
+			pc = nullptr;
+		} else
+			pc = pc->sig;
+	}
+	delete dir;
+}
+
+int ConjuntoP::muestrea() {
+	if (cant > 0) {
+		int lugar = 0;
+		int lugarBuscado = obtenerNumeroAleatorio(1, cant);
+		Direccion pc = ptrConj;
+		while (pc != nullptr) {
+			lugar = lugar + 1;
+			if (lugarBuscado == lugar) {
+				int elemento = pc->dato;
+				pc = nullptr;
+			} else
+				pc = pc->sig;
+		}
+        return elemento;
+	}
+}
+
+int ConjuntoP::obtenerNumeroAleatorio(int min, int max) {
+    return rand() % (max - min + 1) + min;
+}
+
+void ConjuntoP::MostrarConjunto(TCanvas *canvas, int x, int y) {
+	canvas->TextOut(x, y, L"mostrar conjunto");
+}

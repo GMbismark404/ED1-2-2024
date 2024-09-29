@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/25 10:49:47.000.564,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/08/25 10:49:47.000.499,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/08/25 10:57:57.000.262,=C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2024/08/25 11:09:22.000.303,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit2.h</Transaction>
+    <Transaction>2024/08/25 11:09:22.000.303,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit2.cpp</Transaction>
+    <Transaction>2024/08/25 11:09:22.000.272,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit1.h</Transaction>
+    <Transaction>2024/08/25 11:09:22.000.329,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\PLISTA_VECTOR.cbproj</Transaction>
+    <Transaction>2024/08/25 11:09:22.000.272,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit1.dfm</Transaction>
+    <Transaction>2024/08/25 11:09:22.000.228,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\PLISTA_VECTORPCH1.h</Transaction>
+    <Transaction>2024/08/25 11:09:22.000.272,C:\Users\USUARIO\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit1.cpp</Transaction>
+    <Transaction>2024/08/25 11:09:52.000.735,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit2.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\uListaVector.h</Transaction>
+    <Transaction>2024/08/25 11:09:52.000.735,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit2.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\uListaVector.cpp</Transaction>
+    <Transaction>2024/08/25 11:10:27.000.875,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit1.h=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\uFPrincipal.h</Transaction>
+    <Transaction>2024/08/25 11:10:27.000.875,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit1.dfm=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\uFPrincipal.dfm</Transaction>
+    <Transaction>2024/08/25 11:10:27.000.875,D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-2\INF220\PROYECTOS\TDA-LISTA_VECTOR\uFPrincipal.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

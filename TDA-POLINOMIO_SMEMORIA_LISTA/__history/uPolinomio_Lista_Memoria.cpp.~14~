@@ -1,0 +1,123 @@
+//---------------------------------------------------------------------------
+#pragma hdrstop
+#include "uPolinomio_Lista_Memoria.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+PolinomioLS::PolinomioLS(ListaS *lista) : pol(*lista) {
+	this->nt = 0;
+}
+
+direccion PolinomioLS::BuscarExponente(int exp) {
+	direccion dir = pol.siguiente(pol.primero());
+	if (dir != NULO) {
+		direccion dirExp = NULO;
+		while (dir != NULO && dirExp == NULO) {
+			if (pol.recupera(dir) == exp) {
+				dirExp = dir;
+			}
+			dir = pol.siguiente(pol.siguiente(dir));
+		}
+		return dirExp;
+	} else {
+		ShowMessage("El polinomio no tiene terminos!");
+		return NULO;
+	}
+}
+
+direccion PolinomioLS::BuscarTerminoN(int i) {
+	direccion dir = pol.primero();
+	nt = 0;
+	if (dir != NULO) {
+		direccion dirTer = NULO;
+		while (dir != NULO && dirTer == NULO) {
+			nt++; // nt = nt + 1;
+			if (nt == i) {
+				dirTer = dir;
+			}
+			dir = pol.siguiente(pol.siguiente(dir));
+		}
+		return dirTer;
+	} else {
+		ShowMessage("El polinomio no tiene terminos!");
+		return NULO;
+	}
+}
+
+bool PolinomioLS::EsCero() {
+	return (pol.LongitudListas() == 0);
+}
+
+int PolinomioLS::Grado() {
+	direccion dir = pol.siguiente(pol.primero());
+	if (dir != NULO) {
+		int MaxG = pol.recupera(dir);
+		while (dir != NULO) {
+			if (pol.recupera(dir) > MaxG) {
+				MaxG = pol.recupera(dir);
+			}
+			dir = pol.siguiente(pol.siguiente(dir));
+		}
+		return MaxG;
+	} else {
+		ShowMessage("El polinomio no tiene terminos!");
+		return NULO;
+	}
+}
+
+int PolinomioLS::coeficiente(int exp) {
+	direccion dir = BuscarExponente(exp);
+	if (dir != NULO) {
+		return pol.recupera(pol.anterior(dir));
+	} else {
+		ShowMessage("El polinomio no tiene ese termino!");
+	}
+}
+
+int PolinomioLS::exponente(int nroter) {
+	direccion dir = BuscarTerminoN(nroter);
+	if (dir != NULO) {
+		return pol.recupera(pol.siguiente(dir));
+	} else {
+		ShowMessage("No existe ese numero de termino!");
+	}
+}
+
+void PolinomioLS::AsignarCoeficiente(int coef, int exp) {
+	direccion dir = BuscarExponente(exp);
+	if (dir != NULO) {
+		direccion dirCoef = pol.anterior(dir);
+		pol.modifica(dirCoef, coef);
+		if (coef == 0) {
+			pol.suprime(dir);
+			pol.suprime(dirCoef);
+		}
+	} else {
+		ShowMessage("El polinomio no tiene ese termino!");
+	}
+}
+
+void PolinomioLS::poner_termino(int coef, int exp) {
+	direccion dirExp = BuscarExponente(exp);
+	if (dirExp != NULO) {
+		direccion dirCoef = pol.anterior(dirExp);
+		pol.modifica(dirCoef, pol.recupera(dirCoef) + coef);
+		if (pol.recupera(dirCoef) == 0) {
+			pol.suprime(dirExp);
+			pol.suprime(dirCoef);
+		}
+	} else {
+		if (coef != 0) {
+			pol.inserta_ulitmo(exp);
+			pol.inserta(pol.fin(), coef);
+		}
+	}
+}
+
+int PolinomioLS::numero_terminos() {
+	return pol.LongitudListas() / 2;
+}
+
+void PolinomioLS::MostrarPolinomio(TCanvas *canvas, int desde, int hasta) {
+	pol.MostrarLista(canvas, desde, hasta);
+}
